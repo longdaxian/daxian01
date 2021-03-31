@@ -21,7 +21,7 @@ public class UserController {
     public Result findAll(){
         List<User> userList = userService.findAll();
         try {
-            return new Result(true,"查询成功了了（d的）",userList);
+            return new Result(true,"查询成功了了3（d的）",userList);
         } catch (Exception e) {
             e.printStackTrace();
             return new Result(true,"查询失败了（制造冲突）");
