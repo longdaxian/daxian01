@@ -24,7 +24,7 @@ public class UserController {
             return new Result(true,"查询成功了（d的）",userList);
         } catch (Exception e) {
             e.printStackTrace();
-            return new Result(true,"查询失败了");
+            return new Result(true,"查询失败了（制造冲突）");
         }
     }
     @RequestMapping("/add")
