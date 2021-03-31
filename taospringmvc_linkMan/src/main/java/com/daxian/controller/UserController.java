@@ -1,4 +1,4 @@
-package com.daxian.controller;
+﻿package com.daxian.controller;
 
 import com.daxian.entry.Result;
 import com.daxian.pojo.User;
@@ -24,7 +24,7 @@ public class UserController {
             return new Result(true,"查询成功",userList);
         } catch (Exception e) {
             e.printStackTrace();
-            return new Result(true,"查询失败");
+            return new Result(true,"查询失败了");
         }
     }
     @RequestMapping("/add")
